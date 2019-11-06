@@ -13,12 +13,18 @@ class App extends React.Component {
     };
   }
 
-  filterUpdate(value) {
-    //Here you will need to set the filterText property of state to the value passed into this function
+  //Here you will need to set the filterText property of state to the value passed into this function
+  filterUpdate(value) { 
+    this.setState({
+      filterText: value
+    })
   }
 
+  //Here you will need to update the selectedBuilding property of state to the id passed into this function
   selectedUpdate(id) {
-    //Here you will need to update the selectedBuilding property of state to the id passed into this function
+    this.setState({
+      selectedBuilding: id
+    })
   }
 
   render() {
